@@ -1,30 +1,46 @@
-# Smart Parking System 🚗
+# Smart Parking System
 
-نظام مواقف ذكي يستخدم الذكاء الاصطناعي وأردوينو للتعرف على المواقف المشغولة والفارغة وتوجيه السيارات بناءً على أقرب موقف متاح.
+An integrated smart parking management system using artificial intelligence aims to improve the driver experience and increase the efficiency of parking operations by monitoring parking spaces in real-time and automatically directing vehicles to available spaces using smart traffic lights and an electronic information panel.
 
-## 💡 الفكرة:
-- يتم تدريب نموذج YOLO للتعرف على السيارات والمواقف (فارغة ومشغولة).
-- عند التعرف على المواقف الفارغة، يتم التحكم في الإشارات باستخدام Arduino.
-- يتم توجيه السائق إلى المواقف عبر لمبات إرشادية خضراء.
+# Project Idea
 
-## 🧠 تقنيات مستخدمة:
-- YOLOv8 (كاشف الأجسام)
-- Arduino + محاكاة Wokwi
-- Python / Roboflow
+The system helps drivers find parking spaces quickly and effortlessly, reducing congestion within parking spaces by analyzing parking conditions in real-time and directing vehicles based on the nearest available space.
 
-## 📁 ملفات المشروع:
-- `data.yaml`: يحتوي معلومات التدريب والكلاسات.
-- `yolo_model/`: ملفات التدريب والاختبار.
-- `arduino/parking_system.ino`: كود التحكم في الإشارات.
-- `images/`: صور توضح النتيجة.
-- `README.dataset.txt`: وصف مجموعة البيانات.
-- `README.roboflow.txt`: إعدادات Roboflow.
-- `wokwi_link.txt`: رابط مشروع Wokwi.
+The system also identifies unlicensed or suspicious vehicles and sends direct alerts to security authorities.
 
-## 🎯 أهداف المشروع:
-- تحديد ما إذا كان الموقف مشغول أو فاضي
-- التحكم في دخول السيارات حسب توفر المواقف
-- توجيه السيارة لأقرب منطقة فيها مواقف فاضية
+It also provides a smart information panel that enables drivers to accurately locate their vehicle upon returning.
 
+## Technologies Used
 
+- YOLO (for vehicle detection and parking status recognition)
+- OpenCV (for image and video processing)
+- FastAPI (for developing a software interface that connects systems)
+- Arduino (for controlling traffic lights and parking guidance)
+- Wokwi (for virtual simulation and testing of the system)
+- Roboflow (for preparing training data and improving model performance)
 
+## System Features
+
+- Real-time and accurate guidance for drivers to available parking spaces via traffic lights.
+- Improved safety by detecting unknown vehicles and sending instant alerts.
+- An electronic information panel shows the driver's vehicle location upon return.
+- A dashboard displays live data to help management make better decisions.
+- The system can be expanded to include parking spaces at major facilities such as universities, hospitals, and airports.
+
+## Project Files
+
+- `data.yaml`: Information about the training categories and data environment.
+- `yolo_model/`: Files for the model trained to detect parking spaces.
+- `arduino/parking_system.ino`: Arduino code for controlling traffic lights.
+- `images/`: Images illustrating the results of the model or system.
+- `README.dataset.txt`: Explanation of the data preparation used for training.
+- `README.roboflow.txt`: Details on preparing the data using Roboflow.
+- `wokwi_link.txt`: Link to the system simulation on Wokwi.
+
+## Project Objectives
+
+- Reduce parking search time by up to 50%.
+- Significantly reduce parking congestion.
+- Increase security by tracking suspicious vehicles.
+- Improve the user experience in parking lots from entry to rapid parking.
+- Enable management to monitor and analyze data to make better operational decisions.
