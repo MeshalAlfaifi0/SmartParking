@@ -1,0 +1,51 @@
+body {
+    background-color: #e9eff6; /* خلفية رمادية زرقاء هادئة */
+    color: #1a1a1a;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.info-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+    color: #1a1a1a;
+    border: 1px solid #cbd8e3;
+    box-shadow: 0 1px 4px rgba(0, 102, 204, 0.1);
+}
+
+.info-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #005c99; /* أزرق غامق */
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007acc; /* أزرق واضح */
+}
+
+h2, h6 {
+    color: #003366;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.logo-container img {
+    width: 60px;
+    height: auto;
+}
